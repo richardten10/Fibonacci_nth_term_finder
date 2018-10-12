@@ -11,6 +11,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
           Console.WriteLine("Which element n of the fibonacci sequence do you want?");
+            Functions functions = new Functions(); 
           String input = Console.ReadLine();
           int element;
           bool checkInt = false;
@@ -34,9 +35,9 @@ namespace ConsoleApp1
             Console.WriteLine("The nth number in the fibonacci sequence (for n = " + element + ") is: " + result);
         }
 
-        class functions
+        class Functions
         {
-            public static int fib(int input)
+            public int fib(int input)
             {
                 var nToReturn = -1;
                 int x = 0;
@@ -61,10 +62,6 @@ namespace ConsoleApp1
                     }
                     return nToReturn;
                 }
-            }
-            public static void setUp()
-            {
-                
             }
         }
     }
