@@ -39,7 +39,7 @@ namespace ConsoleApp1
         {
             public int fib(int input)
             {
-                var nToReturn = -1;
+                var nToReturn = -2;
                 int x = 0;
                 int y = 1;
                 int counter = input - 2;
